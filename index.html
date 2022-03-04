@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare galerie responsive</title>
+    <style>
+
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        .gallery {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: space-around;
+        }
+
+        .column {
+            flex-basis: 20%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .box {
+            height: 150px;
+            width: 200px;
+            background-color: #353e91;
+            border: 1px solid #353e91;
+            box-shadow: 4px 4px 8px #6973d1;
+            border-radius: 10px;
+     
+        }
+
+        #png {
+            background-image: url(placeholder-image.png);
+            height: 150px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #text {
+            background-color: white;
+            box-shadow: 4px 4px 8px #6973d1;
+            border-radius: 0 0 10px 10px;
+            width: 200px;
+            font-size: 15px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+
+        @media screen and (max-width: 1284px) {
+            .column {
+                flex-basis: 33.33%;
+            }
+        }
+        @media screen and (max-width: 795px) {
+            .column {
+                flex-basis: 50%;
+            }
+        }
+        @media screen and (max-width: 452px) {
+            .column {
+                flex-basis: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="gallery">
+        <div class="row">
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+                
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div id="png"></div>
+                    <div id="text"> Image title</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Qui temporibus harum expedita. Numquam neque odit sapiente 
+        quisquam est laudantium? Debitis ipsam optio magni sed laudantium. 
+        Eius sit minus placeat voluptatum? Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Eligendi cupiditate, velit veritatis labore tempore animi 
+        incidunt, impedit nisi architecto ab, excepturi ullam qui quibusdam dicta. 
+        Quia ipsa eligendi nobis soluta.</p>
+
+</body>
+</html>
